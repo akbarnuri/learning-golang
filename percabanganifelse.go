@@ -1,15 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	age := 18
-	var hasKTP bool
-	if age >= 17 {
-		hasKTP = true
-	} else {
-		hasKTP = false
-	}
+	var num int
 
-	fmt.Printf("Apakah saya mempunyai KTP? : %v", hasKTP)
+	// Meminta input dari pengguna
+	fmt.Print("Masukkan angka: ")
+	fmt.Scan(&num)
+
+	// Mengecek apakah angka genap atau ganjil
+	if num%2 == 0 {
+		fmt.Println(num, "=> genap")
+	} else {
+		fmt.Println(num, "=> ganjil")
+	}
 }
