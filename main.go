@@ -18,7 +18,18 @@ import "fmt"
 // 	fmt.Printf("Halo, perkenalkan namaku %s dan aku berumur %d tahun\n", name, age)
 // }
 
+// func main() {
+// 	name, age, isSingle := "Akbar", 23, true
+// 	fmt.Println(name, age, isSingle)
+// }
+
+var name string = "Akbar"
+
 func main() {
-	name, age, isSingle := "Akbar", 23, true
-	fmt.Println(name, age, isSingle)
+	fmt.Println(name, "dipanggil dari fungsi main")
+	sayHello()
+}
+
+func sayHello() {
+	fmt.Println(name, "dipanggil dari fungsi sayHello")
 }
